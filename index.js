@@ -25,11 +25,15 @@ import ProductRoute from "./routes/product_route.js"
 connectDB()
 
 const corsOptions = {
-  origin: ["https://ecommerce-frontend-bay-nine.vercel.app/"],
+  origin: [
+    "https://ecommerce-frontend-bay-nine.vercel.app", 
+    "https://ecommerce-frontend-git-main-afraz-hussains-projects.vercel.app" 
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"], 
   allowedHeaders: ["Content-Type", "Authorization"], 
   credentials: true, 
 };
+
 
 app.use(cors(corsOptions)); 
 app.use(express.json()); 
