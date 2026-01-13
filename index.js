@@ -25,7 +25,7 @@ import ProductRoute from "./routes/product_route.js"
 connectDB()
 
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://ecommerce-frontend-bay-nine.vercel.app/"],
   methods: ["GET", "POST", "PUT", "DELETE"], 
   allowedHeaders: ["Content-Type", "Authorization"], 
   credentials: true, 
