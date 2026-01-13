@@ -75,6 +75,9 @@ const info=await transporter.sendMail({
   }
 })
 
+app.get("/", (req, res) => {
+  res.send("Backend is live 🚀");
+});
 
 
 app.listen(PORT, () => {
